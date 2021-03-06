@@ -1,0 +1,122 @@
+.footer{
+	padding-top: 58px;
+
+	background-color: #00122f;
+	
+	color: white;	
+}
+.footer__flex-container{
+	display: flex;
+	justify-content: space-between;
+}
+.footer-nav{
+	width: 250px;
+}
+.footer-nav__list{
+	margin: 0;
+
+	padding-left: 0;
+
+	list-style-type: none;
+
+	column-count: 2;
+}
+		
+.footer-nav__item{
+	margin-bottom: 10px;
+}
+
+.footer-about__list{
+	margin: 20px 0 0;
+
+	padding: 0;
+
+	list-style-type: none;
+}
+.footer-about__item{
+	margin-top: 10px;
+}
+.mailphone__list{
+	margin: 0;
+
+	padding: 0;
+
+	list-style-type: none;
+
+	text-align: left;
+}
+.mailphone__item__links{
+	background-position: left;
+	background-repeat: no-repeat;
+}
+.email{
+	margin-top: 25px;
+}
+.tel__number{
+	padding-left: 30px;
+	background-image: url("../img/phone.png");
+}
+.mail__adress{
+	padding-left: 30px;
+	background-image: url("../img/mail.png");
+}
+.socials{
+	margin-top: 0;
+	padding-left: 0;
+	margin-bottom: 40px;
+}
+.socials-item{
+	margin-left: 20px;
+
+	display: inline-block;
+	list-style-type: none;
+}
+.socials-item:first-child{
+	margin-left: 0;
+}
+		
+.vk-link{
+	background: url("../img/vk.png");
+}
+
+.fb-link{
+	background: url("../img/fb.png");
+}
+
+.twitter-link{
+	background: url("../img/twitter.png");
+}
+
+.instagram-link{
+	background: url("../img/instagram.png");
+}
+.vk-link,
+.fb-link,
+.twitter-link,
+.instagram-link{
+	height: 44px;
+
+	padding-left: 40px;
+	padding-bottom: 20px;
+
+	border: 1px solid white;
+	border-radius: 50%;
+
+	vertical-align: middle;
+
+	background-position: center;
+	background-repeat: no-repeat;
+}
+	
+.copyright{
+	margin: 58px auto 0;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	border-top: 1px solid #26354e;
+
+	color: #727882;
+
+	text-align: center;
+}

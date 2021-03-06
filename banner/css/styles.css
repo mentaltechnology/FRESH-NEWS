@@ -1,0 +1,147 @@
+html {
+	box-sizing: border-box;
+	/*изменяет алгоритм расчета размера блока,
+	чтобы свойства width и height задавали размеры не содержимого,
+	 а размеры блока.*/
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	/*все элементы, а так же псевдо элементы наследуют
+	значение свойства box-sizing*/
+}
+
+body {
+	min-width: 320px; /*задает минимальный размер страницы*/
+
+	margin: 0; /*обнуляет margin*/
+
+	font-family: "Arial", sans-serif; /*задает шрифт и семейство шрифтов для всей страницы*/
+	font-size: 16px; /*задает размер шрифта для всей страницы*/
+	line-height: 0.8; /*задает межстрочный интервал для всей страницы*/
+	letter-spacing: -0.32px; /*задает ширину символов для всей страницы*/
+	color: #000; /*задает основной цвет текста на странице*/
+
+	background-color: #fff; /*задает цвет фона*/
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0; /*обнуляет margin в заголовках*/
+}
+
+img{
+	max-width: 100%; /*задает размер изображений по ширине*/
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	margin: 0; /*обнуляет margin в списках*/
+	padding: 0;
+}
+
+li {
+	list-style-type: none; /* убирает декоративный элемент списка*/
+}
+
+figure{
+	margin: 0;
+}
+
+form, input, button {
+	outline: none;
+	border: none;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+.disable-scroll {
+	height: 100%;
+	overflow: hidden;
+}
+
+.fixed-container {
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+
+.ad-banner {
+	display: flex;
+	flex-direction: column;
+}
+
+.ad-banner-link {
+	margin-top: 18px;
+
+	text-align: center;
+}
+
+.ad-banner-img {
+	display: inline-block;
+}
+
+.ad-banner-link:first-child {
+	margin-top: 0px;
+}
+
+@media (max-width: 976.9px) {
+	.ad-banner {
+		min-width: 50%;
+	}
+
+}
+
+@media (max-width: 620px) {
+	.ad-banner-img {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 549px) {
+	.ad-banner {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		max-width: 100%;
+
+		padding-top: 20px;
+	}
+
+	.ad-banner-link {
+		margin-top: 0;
+		margin-left: 20px;
+	}
+
+	.ad-banner-link:first-child {
+		margin-left: 0px;
+	}
+}
+
+@media (max-width: 425.9px) {
+	.ad-banner {
+		padding: 50px 25px;
+
+		overflow-x: scroll;
+	}
+}
+
+@media (max-width: 360px) {
+
+
+	.ad-banner-link{
+		min-width: 100%
+	}
+}

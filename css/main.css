@@ -1,0 +1,391 @@
+.main{
+	padding-top: 20px;
+	padding-bottom: 60px;
+
+	background: linear-gradient(to bottom, #efefef, #f0f0f0, #f2f2f2, #f3f3f3, #f4f4f4, #f5f5f5, #f6f6f6, #f7f7f7, #f9f9f9, #f0f0f0);
+
+	word-wrap: break-word;
+}
+.main__flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/*-----НОВОСТИ ДНЯ-----*/
+.daily-news{
+	width: 25%;
+
+	margin-bottom: 35px;
+
+	background-color: #FFFFFF;
+}
+.daily-news__title{
+	margin: 0;
+
+	padding: 27px 18px;
+
+	border-bottom: 1px solid #e5e5e8;
+
+	font-size: 20px;
+}
+.daily-news__list{
+	margin: 0;
+
+	padding: 25px 18px 5px;
+
+	list-style-type: none;
+}
+.daily-news__item{
+	margin-bottom: 18px;
+}
+.daily-news__article{
+	line-height: 1.4em;
+}
+.daily-news__subtitle{
+	margin: 0;
+
+	font-size: 14px;
+	font-weight: normal;
+}
+.daily-news__item-props {
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 5px;
+
+	font-size: 12px;
+}
+.daily-news__chapter{
+	color: #91919f;
+}
+.daily-news__chapter:before{
+	content: "/";
+}
+.daily-news__time{
+	margin-right: 20px;
+
+	padding-left: 15px;
+
+	background-image: url("../img/clock-grey.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.daily-news__comments{
+	margin-right: 18px;
+
+	padding-left: 15px;
+
+	background-image: url("../img/icon-comments.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.more{
+	margin-left: 35px;
+	margin-right: 35px;
+
+	padding: 11px 20px;
+
+	display: block;
+
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 30px;
+
+	text-align: center;
+	color: #448ccb;
+}
+/*-----ОБМЕН ВАЛЮТ-----*/
+.exchange{
+	width: 100%;
+
+	background-color: white;
+}
+.exchange-table{
+	margin: 0 auto;
+}
+.exchange-table_item{
+	display: inline-block;
+}
+.value{
+	color: #448ccb;
+	padding-right: 40px;
+	padding-left: 10px;
+}
+.exchange__title {
+	margin-top: 0;
+
+	text-align: center;
+}
+.currency{
+	padding-left: 25px;
+
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 20px;
+}
+.usd{
+	background-image: url("../img/dollar.png");
+}
+.eur{
+	background-image: url("../img/euro.png");
+}
+.gbp{
+	background-image: url("../img/pound.png");
+}
+/*-----ЦЕНТРАЛЬНЫЙ КОНТЕЙНЕР-----*/
+.main__central-container{
+	width: 460px;
+}
+.main-news{
+	padding: 90px 35px 30px 20px;
+
+	position: relative;
+
+	color: white;
+	background-color: grey;
+}
+.main-news__img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.main-news__title__link{
+	margin-top: 30px;
+	margin-bottom: 20px;
+
+	display: block;
+}
+.main__news__title{
+	margin: 0;
+
+	position: relative;
+
+	z-index: 2;
+
+	font-size: 30px;
+	line-height: 1.1em;
+}
+.main-news__chapter{
+	position: relative;
+
+	z-index: 2;
+
+	font-size: 12px;
+}
+.main-news__chapter:before{
+	content: "/";
+}
+.main-news__datetime{
+	position: relative;
+
+	z-index: 2;
+
+	font-size: 12px;
+}
+.main-news__time{
+	margin-left: 20px;
+
+	padding-left: 15px;
+
+	background-image: url("../img/clock-white.png");
+	background-position: left;
+	background-repeat: no-repeat;
+}
+.main__other-news{
+	display: flex;
+	flex-wrap: wrap;
+
+	margin-top: 20px;
+}
+.other-news{
+	width: 220px;
+
+	margin-bottom: 20px;
+}
+.other-news__extra{
+	display: none;
+}
+.other-news:nth-child(even){
+	margin-left: 20px;
+}
+
+.other-news__title{
+	margin: 0;
+
+	padding-right: 10px;
+
+	font-size: 14px;
+
+	line-height: 1.4em;
+}
+.other-news__img{
+	width: 220px;
+	height: auto;
+}
+.other-news__props{
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 5px;
+
+	padding-right: 40px;
+
+	font-size: 12px;
+}
+.other-news__chapter{
+	color: #b5b5bd;
+}
+.other-news__chapter:before{
+	order: 1;
+
+	content: "/";
+}
+.other-news__time{
+	order: 2;
+
+	padding-left: 15px;
+
+	background-image: url("../img/clock-grey.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.other-news__comments{
+	order: 3;
+
+	padding-left: 15px;
+
+	background-image: url("../img/icon-comments-grey.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+/*-----САМЫЕ ПОПУЛЯРНЫЕ НОВОСТИ-----*/
+.most-popular{
+	margin-top: 15px;
+
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+.most-popular__title{
+	order: 2;
+
+	max-width: 412px;
+
+	margin: 0;
+	padding: 24px 18px;
+
+	background-color: white;
+
+	border-bottom: 1px solid #e5e5e8;
+
+	font-size: 20px;
+}
+.most-popular__main-news{
+	order: 1;
+
+	width: 588px;
+
+	color: #ffff;
+}
+.most-popular__item{
+	position: relative;
+
+	padding: 100px 60px 20px 20px;
+
+	background-color: grey;
+}
+.most-popular__item__img{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.most-popular__subtitle__link{
+	margin-right: 100px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+
+	display: block;
+}
+.most-popular__subtitle{
+	position: relative;
+	margin: 0;
+
+	font-size: 30px;
+
+	line-height: 1.1em;
+}
+.most-popular__chapter,
+.most-popular__main-news__date{
+	position: relative;
+	font-size: 12px;
+}
+.most-popular__chapter:before{
+	content: "/";
+}
+.most-popular__main-news__time{
+	margin-left: 10px;
+
+	padding-left: 15px;
+
+	background-image: url("../img/clock-white.png");
+	background-position: left;
+	background-repeat: no-repeat;
+}
+.most-popular__main-news__description{
+	position: relative;
+
+	font-size: 14px;
+	color: #a9aaad;
+	line-height: 1.5em;
+}
+.most-popular__other-news{
+	order: 3;
+	width: 412px;
+
+	background-color: #ffff;
+}
+.most-popular__other-news__list{
+	margin: 0;
+
+	padding: 12px 30px 23px 20px;
+
+	list-style-type: none;
+}
+.most-popular__other-news__item{
+	margin-top: 18px;
+}
+.most-popular__other-news__item__title{
+	margin: 0;
+
+	font-size: 16px;
+}
+.most-popular__other-news__item-props{
+	padding-right: 40px;
+	margin-top: 5px;
+
+	font-size: 12px;
+}
+.most-popular__other-news__chapter{
+	color: #b5b5bd;
+}
+.most-popular__other-news__chapter:before{
+	content: "/";
+}
+.most-popular__other-news__comments{
+	margin-left: 10px;
+
+	padding-left: 15px;
+
+	background-image: url("../img/icon-comments.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.most-popular__other-news__time{
+	margin-left: 10px;
+
+	padding-left: 15px;
+
+	background-image: url("../img/clock-grey.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}

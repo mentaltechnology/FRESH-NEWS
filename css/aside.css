@@ -1,0 +1,13 @@
+.aside{
+	display: flex;
+	flex-direction: column;
+}
+.banner__link{
+	margin-top: 25px;
+}
+.banner__link:first-child{
+	margin-top: 0;
+}
+.banner__extra{
+	display: none;
+}

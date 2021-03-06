@@ -1,0 +1,15 @@
+.no-js .main{
+    margin-top: inherit;
+}
+.no-js .header__nav__list{
+    display: flex;
+
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    flex-direction: column;
+}
+.no-js .header__nav__item:before {
+    content: none;
+}

@@ -1,0 +1,133 @@
+.header{
+	padding-bottom: 35px;
+
+	background-color: #ffff;
+
+	border-bottom: 2px solid #f3f3f3;
+}
+.header__top{
+	padding: 20px;
+
+	background-color: #00122f;
+	color: #ffffff;
+}
+.header__flex-container{
+	display: flex;
+	justify-content: space-between;
+}
+.header__title{
+	margin: 0;
+
+	font-size: 16px;
+	font-weight: normal;
+}
+.header__title__link{
+	text-decoration: underline;
+}
+.meta{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-top: 45px;
+}
+.mobile_logo, .menu-btn, .toggleMenu, .mobile-search{
+	display: none;
+}
+.meta__city-dropdown{
+	margin-left: 50px;
+
+	padding-right: 15px;
+
+	background: url('../img/down-arrow.png') no-repeat right;
+
+	color: #448ccb;
+}
+.meta__city-dropdown__link{
+	border-bottom: 2px #448ccb dashed;
+}
+.meta__time-cont{
+	margin-left: 50px;
+}
+.meta__date, .meta__time, .meta__temp{
+	color: #b2b2bb;
+}
+.meta__time{
+	margin-left: 35px;
+
+	padding-left: 25px;
+
+	background-image: url("../img/clock.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.meta__temp{
+	margin-left: 35px;
+
+	padding-left: 30px;
+
+	background-image: url("../img/cloudy.png");
+	background-repeat: no-repeat;
+}
+.search{
+	position: relative;
+
+	margin-left: 45px;
+}
+.search__query{
+	width: 320px;
+	height: 45px;
+
+	padding-left: 20px;
+	padding-right: 40px;
+
+	border-radius: 25px;
+	border: 0;
+
+	background-color: #f3f3f3;
+
+	font-size: 14px;
+}
+.search__submit{
+	position: absolute;
+	right: 8px;
+
+	width: 27px;
+	height: 45px;
+
+	background-image: url("../img/search.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #f3f3f3;
+
+	border-radius: 15px;
+	border: 0;
+}
+.header__nav{
+	margin-top: 40px;
+}
+.header__nav__list{
+	margin: 0;
+
+	padding-left: 0;
+}
+.header__nav__item{
+	margin-left: 18px;
+	margin-right: 18px;
+
+	position: relative;
+
+	display: inline-block;
+}
+.header__nav__item:first-child{
+	margin-left: 0;
+}
+.header__nav__item:first-child::before{
+	content: none;
+}
+.header__nav__item::before {
+	position: absolute;
+	left: -21px;
+	content: "/";
+	color: #e5e5e8;
+}
